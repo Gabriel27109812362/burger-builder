@@ -1,53 +1,61 @@
-.breadBottom {
+@import '../../../styles/mixins.scss';
 
+.breadBottom {
+	@include ingredientSetUp(80%,13%,#f08e4a,#e27b36,0 0 30px 30px,2% auto);
+
+	box-shadow: inset -15px 0 #c15711;
 }
 .breadTop {
-
+	@include ingredientSetUp(80%, 20%, #bc581e, #e27b36, 50% 50% 0 0, 2% auto );
+	box-shadow: inset -15px 0 #c15711;
+	position: relative;
 }
 
 .seedsOne {
-
-  
+	left: 30%;
+	top: 50%;
+	@include seedSetUp(10%,15%,absolute,#fff,40%,rotate(20deg),inset -2px -3px #c9c9c9);
 
 	&::after {
-
-       
+		content: "";
+		left: -200%;
+		top: 50%;
+		@include seedSetUp(100%,100%,absolute,#fff,40%,rotate(60deg),inset 1px 2px #c9c9c9);
 	}
 
 	&::before {
-
-      
+		content: '';
+		left: 150%;
+		top: -300%;
+		@include seedSetUp(100%,100%,absolute,#fff,40%,rotate(60deg),inset -1px -3px #c9c9c9);
 	}
 }
 
 .seedsSecond {
-
-
-
-
-
-
-	
-	
+	right: 25%;
+	top: 50%;
+	@include seedSetUp(10%,15%,absolute,#fff,40%,rotate(120deg),inset -3px 0 #c9c9c9);
 
 	&::before {
-       
-
+		content: "";
+		right: 90%;
+		bottom: 350%;
+		@include seedSetUp(100%,100%,absolute,#fff,40%,rotate(120deg),inset 1px 3px #c9c9c9);
 	}
 }
 
 .meat {
-  
+	@include ingredientSetUp(80%,8% ,#7f3608, #702e05 , 15px,2% auto);
 }
 
 .cheese {
-   
+	@include ingredientSetUp(90%,4.5%, #f4d004, #d6bb22, 20px,2% auto);
 }
 
 .salad {
-   
+	@include ingredientSetUp(85%, 7%,#228c1d ,#91ce50 , 20px,2% auto);
 }
 
 .bacon {
-
+	@include ingredientSetUp(80%, 3%, #bf3813, #c45e38, 0,2% auto);
 }

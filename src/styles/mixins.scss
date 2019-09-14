@@ -1,0 +1,17 @@
+@mixin ingredientSetUp($width, $height, $colorOne, $colorTwo, $radius, $margin) {
+	width: $width;
+	height: $height;
+	background: linear-gradient($colorOne, $colorTwo);
+	margin: $margin;
+	border-radius: $radius;
+}
+
+@mixin seedSetUp($width, $height, $position, $bg-color, $radius, $transform, $box-shadow ) {
+	width: $width;
+	height: $height;
+	position: $position;
+	background-color: $bg-color;
+	border-radius: $radius;
+	transform: $transform;
+	box-shadow: $box-shadow;
+}
