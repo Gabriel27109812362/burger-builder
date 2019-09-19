@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../styles/Ingredient.module.scss';
+import styles from './Ingredient.module.scss';
 
 const Ingredient = (props) => {
 	let ingredient = null;
